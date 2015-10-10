@@ -1,0 +1,223 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>Auth0 AMP</title>
+    <link rel="canonical" href="index.html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px|Lato' rel='stylesheet' type='text/css'>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
+    <style amp-custom>
+      body {
+        background-color: #f0f0f0;
+      }
+
+      * {
+        font-family: 'Slabo 27px', Serif;
+      }
+
+      p {
+        font-family: 'Lato';
+        color: #333;
+        size: 18px;
+      }
+
+      .lightbox {
+        background: #333;
+      }
+
+      .lightbox-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightbox amp-img {
+        width: 100%;
+      }
+
+      .lightbox-content p {
+        color: #fff;
+        padding: 15px;
+      }
+
+      .header-image {
+        position: relative;
+        background-color: #000;
+      }
+
+      .content {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .ad-container {
+        text-align: center;
+        margin: 20px;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .title-section {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+        padding: 15px;        
+      }
+      .title-section amp-img {
+        border-radius: 50%;
+      }
+      .title-section h1 {
+        color: #fff;
+      }
+
+      .section {
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 2px #ccc;
+      }
+
+      .author span {
+        color: #fff;
+        font-size: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+  <header class="header-image">
+    <amp-img 
+      src="https://auth0.com/lib/about/img/team/team-3.jpg" 
+      layout="responsive" 
+      width="2000" 
+      height="1035" 
+      alt="Team">
+    </amp-img>
+
+    <div class="title-section">
+      <h1>A Token Walks Into a SPA</h1>
+      <div class="author">
+        <amp-img
+          src="https://www.gravatar.com/avatar/df6c864847fba9687d962cb80b482764??s=250"
+          alt="Gonto"
+          width="80"
+          height="80">
+        </amp-img>
+        <span>By: Gonto &middot; October 12, 2015</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">    
+    <article>
+      <div class="section">
+        <h2>A Token Walks into A SPA</h2>
+        <p>
+          Lorem ipsum dolor sit amet, has nisl nihil convenire et, vim at aeque inermis reprehendunt.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nobis, dolorem! Debitis, amet esse consequatur, est quasi hic ratione voluptatum sequi repudiandae rem illum repellendus tempore provident tenetur non. Voluptas.
+        </p>
+
+        <amp-lightbox id="lightbox" class="lightbox" layout="nodisplay">
+          <div class="lightbox-content">
+            <amp-img 
+              src="https://cdn.auth0.com/website/jobs/team_2.jpg"
+              width="2000"
+              height="1035"
+              layout="responsive">
+            </amp-img>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore id iusto culpa labore, laborum, vitae perferendis praesentium incidunt necessitatibus quasi officia, dicta atque harum aliquam rerum inventore quam tempora fugit?
+            </p>
+          </div>
+        </amp-lightbox>
+
+        <amp-img id="main-image"
+            src="https://cdn.auth0.com/website/jobs/team_2.jpg"
+            srcset="https://cdn.auth0.com/website/jobs/team_2.jpg"
+            placeholder
+            width="2000" height="1035"
+            layout="responsive"
+            on="tap:lightbox">
+        </amp-img>
+
+      </div>
+
+      <div class="ad-container">
+
+        <amp-ad width="320" height="250"
+            type="adsense"
+            data-ad-client="ca-pub-8125901705757971"
+            data-ad-slot="7783467241">
+        </amp-ad>
+        
+        <amp-ad width="320" height="250"
+            type="doubleclick"
+            data-slot="/4119129/mobile_ad_banner">
+        </amp-ad>
+
+      </div>
+
+
+      <div class="section">
+        <h2>Video</h2>
+        <p>
+          Lorem ipsum dolor sit amet, has nisl nihil convenire et, vim at aeque inermis reprehendunt.
+        </p>
+        <amp-youtube
+            video-id="pgFtp2LgwoE"
+            layout="responsive"
+            width="480" height="270">
+        </amp-youtube>
+      </div>
+
+      <div class="section">
+        <h2>Pictures</h2>
+
+        <amp-carousel id="main-carousel" width="400" height="300" type="slides">
+          <amp-img
+            src="https://www.jsconfar.com/static/images/speakers/workshop-gonto.jpeg"
+            width="400"
+            height="400">
+          </amp-img>
+          <amp-img
+            src="https://c2.staticflickr.com/6/5758/20330662003_d444cd54d0.jpg"
+            width="500"
+            height="333">
+          </amp-img>
+          <amp-img
+            src="http://i.ytimg.com/vi/fWar75R1NGo/hqdefault.jpg"
+            width="480"
+            height="360">
+          </amp-img>
+        </amp-carousel>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laudantium id commodi quod sunt quidem sed quam, corporis itaque consequatur, quo reprehenderit nemo. Corporis quidem accusantium minus cumque nemo nisi.
+        </p>
+      </div>     
+
+    </article>  
+  </body>
+</html>
